@@ -1,0 +1,245 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+*/
+
+@import 'bootstrap';
+@import 'bootstrap-responsive';
+@import 'bourbon';
+
+
+#header_container {
+  height: 50px;
+  background: #000;
+  padding-top: 20px;
+  
+}
+
+header {  
+  margin: 0;
+  
+  ul {
+    
+    float: left;
+    li {
+      float: left;
+      margin-right: 30px;
+      list-style-type: none;
+      
+      a {
+        color: #e5e5e5;
+        
+        &:link {
+          text-decoration: none;
+        }
+        &:hover {
+          color: white;
+        }
+        
+        img {
+          margin-right: 5px;
+          margin-top: 3px;  
+        }
+        
+      }
+      
+    }
+  }
+  
+  #search_box {    
+    float: right;
+    
+    img {
+      margin-right: 5px;
+      margin-top: 3px;  
+    }
+    
+  }
+  
+}
+
+
+#main_navigation {
+  padding-top: 50px;
+  
+  #logo_container {
+    float: left;
+    margin-right: 40px;    
+    
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+    
+    h4 {      
+      float: left;
+      margin-top: 20px;
+      font-style: italic;
+      color: #ccc;
+    }
+  }
+  
+  #navigation {
+    padding-top: 20px;
+    
+    ul {
+      li {
+        float: left;
+        list-style-type: none;
+        
+        a {
+          color: #ccc;  
+          padding: 50px;
+          &:hover {
+            
+            background: #D74340;
+          }
+          
+        }
+        
+      }
+    }
+  }
+  
+}
+
+
+#front_hero {
+  position: relative;
+    
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%, rgba(187,142,139,0.96) 88%, rgba(187,142,139,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(237,179,178,0.64)), color-stop(88%,rgba(187,142,139,0.96)), color-stop(100%,rgba(187,142,139,1))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3edb3b2', endColorstr='#bb8e8b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  
+  height: 533px;
+  
+  
+  .info_container {
+    float: left;
+    border-left: 5px solid #D74340;
+    background: #B28685;
+    height: 200px;
+    width: 475px;
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    
+    
+    
+    h2 {
+      color: white;
+    }
+    
+    p {
+      color: white;
+    }
+    
+    .learn_more_button {      
+      background: #5E5E5E;
+      width: 250px;
+      height: 50px;
+      
+      h4 {
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+        margin-top: 17px;
+        float: left;
+        color: white;
+      }      
+      
+      div {
+        padding-top: 15px;
+        float: right;
+        width: 30px;
+        height: 35px;
+        background: #424242;
+        text-align: center;
+        
+        i {
+          margin: auto;
+        }
+        
+      }
+      
+    }
+    
+  } 
+  
+}
+
+
+#offerings_container {
+  width: 100%;  
+  
+}
+
+#main_offerings_list {
+  padding: 0px 20px;
+  max-width: 1200px;
+  margin-top: -100px; 
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 9999;  
+  background: #fff;
+  text-align: justify;
+  //min-width: 940px;
+ 
+  .offerings_box {    
+    
+    width: 200px;    
+    margin-top: 20px;
+    display: inline-block;
+    
+    
+    
+    img {
+      
+    }
+    
+    h4 {
+      margin: 0;
+      padding: 0;
+      background: #262729;
+      color: #fff;
+      padding: 5px;
+      font-size: 15px;
+    }
+    
+    p {
+      color: #fff;
+      background: #D74340;
+      padding: 20px;
+    }
+    
+  }
+  
+  .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+  
+  
+  
+  
+}
+
+
+
+
+

@@ -2,13 +2,70 @@
 <html>
 <head>
   <title>Fit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	
+	<div id="header_container">
+		<header class="container">
+			<ul>
+				<li>
+					<a href="#">
+						<img class="pull-left" src="/assets/icons/calendar_icon.png" />
+						Opening Hours
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pull-left" src="/assets/icons/phone_icon.png" />
+						1-514-508-5112
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img class="pull-left" src="/assets/icons/mail_icon.png" />
+						Contact
+					</a>
+				</li>
+			</ul>
+			<div id="search_box">
+				<img class="pull-left" src="/assets/icons/search_icon.png" />
+				<input type="text" />
+			</div>
+		</header>
+	</div>
+	
+	<div id="main_navigation" class="container">
+		<div id="logo_container">
+			<img src="/assets/fit_logo.png" />
+			<h4>FITNESS / SPORTS</h4>
+		</div>
+		
+		<div id="navigation">
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Trainers</a>
+				</li>
+				<li>
+					<a href="#">Classes</a>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	
+		
+	<%= yield %>
+	
+	
 </body>
 </html>
