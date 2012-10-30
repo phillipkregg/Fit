@@ -16,10 +16,24 @@
 @import 'bourbon';
 
 
+.container {
+  
+  /* Large desktop */
+  @media (min-width: 1200px) { 
+    width: 960px;
+  }
+  
+  /* Portrait tablet to landscape and desktop */
+  @media (min-width: 980px) and (max-width: 1200px) { 
+    width: 960px;
+  }
+}
+
 #header_container {
   height: 50px;
   background: #000;
   padding-top: 20px;
+ 
   
 }
 
@@ -68,11 +82,11 @@ header {
 
 
 #main_navigation {
-  padding-top: 50px;
-  
+    
   #logo_container {
     float: left;
-    margin-right: 40px;    
+    margin-right: 40px;  
+    margin-top: 30px;  
     
     img {
       float: left;
@@ -88,14 +102,15 @@ header {
   }
   
   #navigation {
-    padding-top: 20px;
-    
+       
     ul {
+      margin: 0; 
       li {
         float: left;
         list-style-type: none;
         
         a {
+          display: inline-block;
           color: #ccc;  
           padding: 50px;
           &:hover {
@@ -182,32 +197,39 @@ header {
 
 
 #offerings_container {
-  width: 100%;  
+  position: relative;
+  width: 100%;
+  background: #E4E8EE;
+  text-align: center;
+  height: 132px;
   
 }
 
 #main_offerings_list {
-  padding: 0px 20px;
-  max-width: 1200px;
+  
+  padding: 20px;
   margin-top: -100px; 
   margin-right: auto;
   margin-left: auto;
   position: relative;
   z-index: 9999;  
   background: #fff;
-  text-align: justify;
-  //min-width: 940px;
+  width: 940px;
+    
  
   .offerings_box {    
     
-    width: 200px;    
-    margin-top: 20px;
+    &:nth-child(2) {
+      margin-right: 20px;
+    }
+    
+    width: 217px;    
+    margin: 0px;
     display: inline-block;
+        
     
-    
-    
-    img {
-      
+   img {
+      margin: 0 auto;
     }
     
     h4 {
@@ -226,18 +248,83 @@ header {
     }
     
   }
-  
-  .stretch {
-    width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0
-}
-  
-  
-  
+   
   
 }
+
+
+//******************* HOME CONTENT
+
+.gray_background {
+  background: #E4E8EE;
+  margin-top: 300px;
+  height: 100%;
+}
+
+#home_content {
+  text-align: center;  
+  
+  img {
+    margin: 0 auto;
+  }
+  
+  .home_column {
+    width: 300px;
+    padding: 10px;
+    float: left;
+    
+    .white_container {
+      width: 300px;
+      background: #fff;
+    }
+    
+    .home_column_header {
+      margin-top: -35px;
+      border-left: 5px solid #D74340;
+      padding: 20px;
+      background: #262729;
+      h4 {
+        float: left;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 14px;
+      }   
+    }
+    
+  }
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
