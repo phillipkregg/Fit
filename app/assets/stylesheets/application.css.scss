@@ -14,7 +14,18 @@
 @import 'bootstrap';
 @import 'bootstrap-responsive';
 @import 'bourbon';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  transition:all .3s ease-in-out;  
+  -o-transition:all .3s ease-in-out;  
+  -moz-transition:all .3s ease-in-out;  
+  -webkit-transition:all .3s ease-in-out;
+}
 
 .container {
   
@@ -137,18 +148,22 @@ header {
         a {          
           @media (min-width: 980px) {
             display: inline-block;
+            font-size: 18px;
             color: #ccc;  
             padding: 50px;
-            &:hover {            
+            &:hover {       
+              color: white;
+              text-decoration: none;     
               background: #D74340;
             }
           }
           @media (max-width: 979px) {
             display: block;
+            font-size: 18px;
             color: #000;
             background: #e5e5e5;
-            border-bottom: 1px solid #666;
-            padding: 10px;
+            border: 1px solid #ccc;
+            padding: 20px;
             &:hover {  
               color: #fff;          
               background: #D74340;
@@ -169,13 +184,24 @@ header {
 #front_hero {
   position: relative;
     
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%, rgba(187,142,139,0.96) 88%, rgba(187,142,139,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(237,179,178,0.64)), color-stop(88%,rgba(187,142,139,0.96)), color-stop(100%,rgba(187,142,139,1))); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3edb3b2', endColorstr='#bb8e8b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  // background: url("/assets/man_woman_gym.png") no-repeat center center, -moz-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%, rgba(187,142,139,0.96) 88%, rgba(187,142,139,1) 100%); /* FF3.6+ */
+  // background: url("/assets/man_woman_gym.png") no-repeat center center, -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(237,179,178,0.64)), color-stop(88%,rgba(187,142,139,0.96)), color-stop(100%,rgba(187,142,139,1))); /* Chrome,Safari4+ */
+  // background: url("/assets/man_woman_gym.png") no-repeat center center, -webkit-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* Chrome10+,Safari5.1+ */
+  // background: url("/assets/man_woman_gym.png") no-repeat center center, -o-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* Opera 12+ */
+  // background: url("/assets/man_woman_gym.png") no-repeat center center, -ms-radial-gradient(center, ellipse cover,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* IE10+ */
+  // background: url("/assets/man_woman_gym.png") no-repeat center center, radial-gradient(ellipse at center,  rgba(237,179,178,0.64) 0%,rgba(187,142,139,0.96) 88%,rgba(187,142,139,1) 100%); /* W3C */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3edb3b2', endColorstr='#bb8e8b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+//   
+  background: url("/assets/man_woman_gym.png") no-repeat center center, rgb(205,163,160); /* Old browsers */
+  background: url("/assets/man_woman_gym.png") no-repeat center center,  -moz-radial-gradient(center, ellipse cover,  rgba(205,163,160,1) 0%, rgba(98,77,75,1) 100%); /* FF3.6+ */
+  background: url("/assets/man_woman_gym.png") no-repeat center center,  -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(205,163,160,1)), color-stop(100%,rgba(98,77,75,1))); /* Chrome,Safari4+ */
+  background: url("/assets/man_woman_gym.png") no-repeat center center, -webkit-radial-gradient(center, ellipse cover,  rgba(205,163,160,1) 0%,rgba(98,77,75,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: url("/assets/man_woman_gym.png") no-repeat center center,  -o-radial-gradient(center, ellipse cover,  rgba(205,163,160,1) 0%,rgba(98,77,75,1) 100%); /* Opera 12+ */
+  background: url("/assets/man_woman_gym.png") no-repeat center center,  -ms-radial-gradient(center, ellipse cover,  rgba(205,163,160,1) 0%,rgba(98,77,75,1) 100%); /* IE10+ */
+  background: url("/assets/man_woman_gym.png") no-repeat center center,  radial-gradient(ellipse at center,  rgba(205,163,160,1) 0%,rgba(98,77,75,1) 100%); /* W3C */
+  background-size: 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cda3a0', endColorstr='#624d4b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
   
   @media (min-width: 980px) {
     height: 533px;
@@ -183,9 +209,10 @@ header {
   
   
   .info_container {
+    background-color: rgba(0, 0, 0, 0.6);
     float: left;
     border-left: 5px solid #D74340;
-    background: #B28685;
+    //background: #B28685;
     height: 200px;
     @media (min-width: 767px) and (max-width: 1200px), (min-width: 1200px) {
       width: 475px;
@@ -208,6 +235,7 @@ header {
       background: #5E5E5E;
       width: 250px;
       height: 50px;
+      cursor: pointer;
       
       h4 {
         margin: 0;

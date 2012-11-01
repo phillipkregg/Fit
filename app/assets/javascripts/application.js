@@ -13,3 +13,74 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require jstween.js
+
+
+$(document).ready(function() {
+	
+	
+	$('.learn_more_button').on('mouseenter', function() {
+		$('.learn_more_button').tween({
+		   backgroundColor:{
+		      start: '#5E5E5E',
+		      stop: '#D74340',
+		      time: 0,
+		      duration: 0.3,
+		      effect:'easeInOut'
+		   }
+		}).play();
+		
+	});
+	
+	$('.learn_more_button').on('mouseleave', function() {
+		$('.learn_more_button').tween({
+		   backgroundColor:{
+		      start: '#D74340',
+		      stop: '#5E5E5E',
+		      time: 0,
+		      duration: 0.3,
+		      effect:'easeInOut'
+		   }
+		}).play();
+		
+	});
+
+	
+	
+	$('#navigation a').on('mouseenter', function() {
+		$(this).tween({
+		   backgroundColor:{
+		      start: '#fff',
+		      stop: '#D74340',
+		      time: 0,
+		      duration: 0.3,
+		      effect:'easeInOut'
+		   }
+		}).play();
+		
+	});
+	
+	$('#navigation a').on('mouseleave', function() {
+		$(this).tween({
+		   backgroundColor:{
+		      start: '#D74340',
+		      stop: '#fff',
+		      time: 0,
+		      duration: 0.3,
+		      effect:'easeInOut'
+		   }
+		}).play();
+		
+	});
+	
+	
+	
+	
+	
+	
+	
+}); // End document.ready
+
+
+
+
