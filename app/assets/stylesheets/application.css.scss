@@ -30,9 +30,10 @@
 }
 
 #header_container {
-  height: 50px;
+  
   background: #000;
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
  
   
 }
@@ -40,12 +41,27 @@
 header {  
   margin: 0;
   
+  #search_box {    
+    float: right;
+    
+    background: url("/assets/icons/search_icon.png") no-repeat scroll 7px 7px;
+    padding-left:30px;
+    
+    
+    // img {
+      // margin-right: 5px;
+      // margin-top: 3px;  
+    // }
+    
+  }
+  
   ul {
     
     float: left;
     li {
       float: left;
       margin-right: 30px;
+      margin-bottom: 5px;
       list-style-type: none;
       
       a {
@@ -66,17 +82,8 @@ header {
       }
       
     }
-  }
+  }  
   
-  #search_box {    
-    float: right;
-    
-    img {
-      margin-right: 5px;
-      margin-top: 3px;  
-    }
-    
-  }
   
 }
 

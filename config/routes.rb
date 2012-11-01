@@ -1,5 +1,6 @@
 Fit::Application.routes.draw do
   get "home/index"
+  get "home/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
